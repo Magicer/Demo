@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/nav_header_bg"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="写一个内容，要长一点才好。"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_above="@id/tv_content"
+        android:layout_marginBottom="10dp"/>
+    <ImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_above="@id/tv_username"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>
